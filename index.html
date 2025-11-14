@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Scientific Calculator</h2>
+
+    <div class="top-bar">
+      <div class="mode-toggle">
+        <label>
+          <input type="checkbox" id="modeSwitch">
+          🌙 / ☀️
+        </label>
+      </div>
+      <button id="toggleSci">🧮 Scientific</button>
+      <button id="toggleHistory">📜 History</button>
+    </div>
+
+    <div class="calculator">
+      <input type="text" id="display" readonly />
+
+      <div class="buttons basic">
+        <button class="operator">C</button>
+        <button class="operator">/</button>
+        <button class="operator">*</button>
+        <button class="operator">←</button>
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">-</button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">+</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button id="equals">=</button>
+
+        <button>0</button>
+        <button>.</button>
+      </div>
+
+      <div class="buttons scientific hidden">
+        <button>sin(</button>
+        <button>cos(</button>
+        <button>tan(</button>
+        <button>√(</button>
+        <button>^</button>
+        <button>(</button>
+        <button>)</button>
+      </div>
+    </div>
+
+    <div class="history hidden" id="historyBox">
+      <h3>History</h3>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
